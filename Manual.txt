@@ -1,0 +1,5 @@
+- cd <your folder>
+- python manage.py runserver
+- python manage.py startapp <name's app>
+- add app to settings.py file
+- 
