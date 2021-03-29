@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>App1.com</title>
-</head>
-<body>
+{% extends "myApp1/base.html" %}  <!--more-->
+
+{% block index %}
     <h1>HELLO EVERYONE</h1>
     <p><b>INFORMATIONS</b></p>
     <ul>
-        <li>{{ infor }}</li>
+        <li>{{ name }}</li>
+        <li>{{ age}}</li>
     </ul>
-</body>
-</html>
+{% endblock %}

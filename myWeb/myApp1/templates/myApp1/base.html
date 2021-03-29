@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+    <style>
+        .header{
+            pading: 30px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" >
+        <h1>My Web site</h1>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+            <li>Link 4</li>
+        </ul>
+    </div>
+    <div class="index">   <!--from index.html -> block index-->
+        {% block index %}
+        {% endblock %}
+    </div>
+    <div class="questions_list">
+        {% block list %}
+        {% endblock %}
+    </div>
+</body>
+</html>

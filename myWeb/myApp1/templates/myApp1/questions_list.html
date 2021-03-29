@@ -1,0 +1,11 @@
+{% extends "myApp1/base.html" %}
+
+{% block list %}
+    {% if questions %}
+        {% for item in questions %}
+            {{ item.question_text }}
+        {% endfor %}
+    {% else %}
+        <h3 style="color:red">No Question</h3>
+    {% endif %}
+{% endblock %}
