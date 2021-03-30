@@ -14,3 +14,6 @@ def questions_list(request):
     context = {"questions" : ques_list}
     return render(request=request,template_name="myApp1/questions_list.html",context=context)
 
+def detailView(request,question_id):
+    q=Question.objects.get(pk=question_id)
+    return render(request=request,template_name="myApp1/detail_question.html",context={"qs" : q})
